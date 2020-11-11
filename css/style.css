@@ -450,27 +450,62 @@ textarea {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #3C4E59;
+  max-width: 120rem;
+  margin: 0 auto;
 }
-p{
-  font-weight: 500;
-  font-size: 1.2rem;
-}
+
 .contenedor{
   max-width: 120rem;
   margin: 0 auto;
 }
-.header a, div{ 
-  justify-content:flex-end;
+.header{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+  align-items:center;
+  align-content:flex-start;
+  background-color: #022840;
 }
+
+@media (max-width: 992px) {
+  .header{
+    display: block;
+  }
+  .logo_nav{
+    display: flex;
+    justify-content: center;
+  }
+  .padding_nav{
+    display: flex;
+    justify-content: center;
+  }
+  .padding_navsu{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+}
+
 .logo{
   max-width: 15rem;
   width: 100%;
+  padding: 0.5rem;
 }
 
 .item-nav{
   display: inline-block;
   margin: 3px;
 }
-.navbar{
-  background-color: #022840;
+
+.body {
+  background-color: #3C4E59;
+}
+
+.padding_nav{
+  padding-right: 0.4rem;
 }
